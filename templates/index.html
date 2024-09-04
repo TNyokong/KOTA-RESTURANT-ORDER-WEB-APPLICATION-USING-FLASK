@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP KOTA Restaurant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TP KOTA Restaurant</h1>
+        <form action="/order" method="POST">
+            <div class="form-group">
+                <label for="name">Enter your name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="kota">Choose your Kota:</label>
+                <select id="kota" name="kota">
+                    <option value="none">None</option>
+                    <option value="R20 Kota">R20 Kota</option>
+                    <option value="R35 Kota">R35 Kota</option>
+                    <option value="R50 Kota">R50 Kota</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="chips">Choose your Chips:</label>
+                <select id="chips" name="chips">
+                    <option value="none">None</option>
+                    <option value="R10 Chips">R10 Chips</option>
+                    <option value="R20 Chips">R20 Chips</option>
+                    <option value="R50 Chips">R50 Chips</option>
+                </select>
+            </div>
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+</body>
+</html>
