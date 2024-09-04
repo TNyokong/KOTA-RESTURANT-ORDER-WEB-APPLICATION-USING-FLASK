@@ -1,7 +1,7 @@
 Languages used:
-HTML
-CSS
-PYTHON
+HTML,
+CSS,
+PYTHON,
 Flask(framework)
 
 The application offers the user the ability to make an online purchace. The user enters their details, they then select their order.
