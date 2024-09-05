@@ -26,7 +26,20 @@ def order():
     "INSERT INTO orders(customer_name,kota_choice,chips_choice) VALUES(%s,%s,%s)", (name,kota,chips)
     )
     db.commit()
-    return redirect(url_for('index'))
+    cursor.close()
+    return redirect(url_for('orders'))
 
-if __name__=='__main__':
+@app.route('/orders')
+def orders():
+    cursor = db.cursor()
+
+    # Fetch customer name and order number from the database
+    cursor.execute("SELECT id, customer_name FROM orders")
+    orders = cursor.fetchall()
+
+    cursor.close()  # Close the cursor
+    # Pass the orders to the HTML template
+    return render_template('order_number.html', orders=orders)
+
+if __name__ == '__main__':
     app.run(debug=True)
