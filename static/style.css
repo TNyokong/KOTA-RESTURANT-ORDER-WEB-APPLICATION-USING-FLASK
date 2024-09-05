@@ -1,3 +1,6 @@
+
+/* index page */
+
 body {
     background-image: url("/static/images/kota.jpeg");
     font-family: Arial, sans-serif;
@@ -53,4 +56,75 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #218838;
+}
+
+/* styles.css */
+
+#orders-container {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    padding: 40px;
+    border-radius: 15px;
+    width: 85%;
+    margin: 50px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#orders-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#orders-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#orders-container th, #orders-container td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#orders-container th {
+    background-color: #ff7e5f;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+#orders-container tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#orders-container tr:hover {
+    background-color: #ffe0cc;
+}
+
+#orders-container td {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    #orders-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #orders-container table, #orders-container th, #orders-container td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    #orders-container h1 {
+        font-size: 2rem;
+    }
 }
