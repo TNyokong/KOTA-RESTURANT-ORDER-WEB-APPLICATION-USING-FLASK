@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP KOTA Restaurant</title>
+    <title>Order Food</title>
     <link rel="stylesheet" href="/static/style.css">
 </head>
-<body>
+<body class="order-form-bg">
     <div class="container">
-        <h1>TP KOTA Restaurant</h1>
+        <h1>Place Your Order</h1>
         <form action="{{ url_for('order') }}" method="POST">
             <div class="form-group">
                 <label for="name">Enter your name:</label>

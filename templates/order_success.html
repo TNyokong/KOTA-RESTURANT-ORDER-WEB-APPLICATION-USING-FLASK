@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Success</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="order-success-bg">
+    <div class="container">
+        <h1>Order Successful</h1>
+        <p>Your order number is: <strong>{{ order_number }}</strong></p>
+        <p>Estimated wait time: <strong>{{ wait_time }} minutes</strong></p>
+        <a href="{{ url_for('role_selection') }}" class="btn">Go Back</a>
+    </div>
+</body>
+</html>

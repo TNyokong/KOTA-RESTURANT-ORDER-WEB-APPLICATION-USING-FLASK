@@ -1,27 +1,22 @@
-
-/* index page */
-
 body {
-    background-image: url("/static/images/kota.jpeg");
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
-    width: 100%;
-    max-width: 400px;
-    margin: 50px auto;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    margin-bottom: 20px;
 }
 
 .form-group {
@@ -31,100 +26,83 @@ h1 {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #333;
 }
 
-input[type="text"],
-select {
+input, select, button {
     width: 100%;
     padding: 10px;
-    margin: 5px 0 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 4px;
-    box-sizing: border-box;
 }
 
-button[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #28a745;
-    color: #fff;
+button {
+    background-color: #4CAF50;
+    color: white;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
+    padding: 15px;
 }
 
-button[type="submit"]:hover {
-    background-color: #218838;
+button:hover {
+    background-color: #45a049;
 }
 
-/* styles.css */
-
-#orders-container {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, #ffecd2, #fcb69f);
-    padding: 40px;
-    border-radius: 15px;
-    width: 85%;
-    margin: 50px auto;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-#orders-container h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-#orders-container table {
+table {
     width: 100%;
     border-collapse: collapse;
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
 }
 
-#orders-container th, #orders-container td {
-    padding: 16px;
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
 }
 
-#orders-container th {
-    background-color: #ff7e5f;
+th {
+    background-color: #f4f4f4;
+}
+
+a.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
     color: white;
-    font-size: 1.2rem;
-    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
 }
 
-#orders-container tr:nth-child(even) {
-    background-color: #f9f9f9;
+a.btn:hover {
+    background-color: #45a049;
 }
 
-#orders-container tr:hover {
-    background-color: #ffe0cc;
+.role-selection-bg {
+    background-image: url('/static/images/kota.jpeg');
 }
 
-#orders-container td {
-    color: #333;
-    font-size: 1.1rem;
+.order-form-bg {
+    background-image: url('/static/images/kota.jpeg');
 }
 
-@media (max-width: 768px) {
-    #orders-container {
-        width: 100%;
-        padding: 20px;
-    }
+.order-success-bg {
+    background-image: url('/static/images/kota.jpeg');
+}
 
-    #orders-container table, #orders-container th, #orders-container td {
-        font-size: 0.9rem;
-        padding: 10px;
-    }
+.login-bg {
+    background-image: url('/static/images/kota.jpeg');
+}
 
-    #orders-container h1 {
-        font-size: 2rem;
-    }
+.admin-orders-bg {
+    background-image: url('/static/images/kota.jpeg');
+}
+
+.btn-danger {
+    background-color: #f44336;
+}
+
+.btn-danger:hover {
+    background-color: #e53935;
 }

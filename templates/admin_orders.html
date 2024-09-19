@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Orders</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="admin-orders-bg">
+    <div class="container">
+        <h1>Customer Orders</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Order Number</th>
+                    <th>Customer Name</th>
+                    <th>Kota Choice</th>
+                    <th>Chips Choice</th>
+                    <th>Order Time</th>
+                    <th>Wait Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for order in orders %}
+                <tr>
+                    <td>{{ order[4] }}</td>
+                    <td>{{ order[1] }}</td>
+                    <td>{{ order[2] }}</td>
+                    <td>{{ order[3] }}</td>
+                    <td>{{ order[5] }}</td>
+                    <td>{{ order[6] }} minutes</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <form action="{{ url_for('clear_orders') }}" method="POST">
+            <button type="submit" class="btn btn-danger">Clear All Orders</button>
+        </form>
+        <a href="{{ url_for('logout') }}" class="btn">Logout</a>
+    </div>
+</body>
+</html>
